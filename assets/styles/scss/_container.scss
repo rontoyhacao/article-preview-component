@@ -1,0 +1,117 @@
+.container {
+    display: flex;
+    width: 730px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 10px 30px 60px -20px rgba(0, 0, 0, 0.1);
+    .container-image {
+        width: 700px;
+        overflow: hidden;
+        img {
+            height: 280px;
+        }
+    }
+    .container-article {
+        background: white;
+        .article {
+            margin: 0 39px;
+            .article-heading {
+                font-size: 20px;
+                margin: 35px 0 10px;
+                color: $Very-Dark-Grayish-Blue;
+            }
+            p {
+                margin: 15px 0 20px;
+                color: $Desaturated-Dark-Blue;
+                line-height: 20px;
+            }
+            .container-info {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .article-info {
+                    display: flex;
+                    img {
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                    .article-info-name {
+                        margin: 0 16px;
+                        .article-name {
+                            font-size: 13px;
+                            color: $Very-Dark-Grayish-Blue;
+                            margin-bottom: 2px;
+                        }
+                        span {
+                            color: $Grayish-Blue;
+                        }
+                    }
+                }
+                .share {
+                    position: relative;
+                    .share-social-container {
+                        display: none;
+                        .share-social {
+                            color: white;
+                            position: absolute;
+                            right: -115px;
+                            bottom: 60px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            background: $Very-Dark-Grayish-Blue;
+                            width: 250px;
+                            padding: 15px 30px;
+                            border-radius: 10px;
+                            font-size: 18px;
+                            &::before {
+                                content: '';
+                                height: 20px;
+                                width: 20px;
+                                background: $Very-Dark-Grayish-Blue;
+                                position: absolute;
+                                bottom: -10px;
+                                right: 120px;
+                                transform: rotate(135deg);
+    
+                            }
+                            span {
+                                &:nth-child(1) {
+                                    color: $Grayish-Blue;
+                                    text-transform: uppercase;
+                                    letter-spacing: 5px;
+                                    font-size: 14px;
+                                }
+                                &:nth-child(n+2) {
+                                    a {
+                                        color: $Light-Grayish-Blue;
+                                    }
+                                    &:hover {
+                                        opacity: 0.7;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    button {
+                        background-color: $Light-Grayish-Blue;
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 50%;
+                        border: none;
+                        color: $Desaturated-Dark-Blue;
+                        cursor: pointer;
+                        &:hover {
+                            opacity: 0.7;
+                        }
+                    }
+                    .active {
+                        background-color: $Very-Dark-Grayish-Blue;
+                        color: $Light-Grayish-Blue;
+                    }
+                }
+            }
+        }
+        
+    }
+}
